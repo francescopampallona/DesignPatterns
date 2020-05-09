@@ -7,5 +7,4 @@ Se il numero di oggetti concreti è molto grande, ***il pattern Factory Method n
 
 **SOLUZIONE**
 Usando il pattern Prototype non sarà più necessario creare una classe CreatorN per ogni ConcreteObjectN.
-Il metodo createObject di Creator adesso ci permette di creare oggetti appartenenti a classi diverse usando 
-Java Reflection.
+Il metodo createObject di Creator adesso ci permette di creare oggetti appartenenti a classi diverse.
