@@ -38,12 +38,23 @@ public class Composite implements Component {
     
     @Override
     public void showComponents(){
-        int n=0;
+        int n=components.size();
+        System.out.println("Componenti presenti in " + this.getName());
+         switch(n){
+            case 0: 
+                System.out.println("Non ci sono componenti!!");
+                break;
+            case 1: 
+                System.out.println("1 componente");
+                break;
+            default:
+                System.out.println(n + " componenti");
+                break;
+        }
         for(Component c: components){
             System.out.println(c.getName());
-            n++;
         }
-        System.out.println(n + " compoenti");
+       
     }
     
     
