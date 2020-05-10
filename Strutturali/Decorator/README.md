@@ -17,3 +17,7 @@ funzionalità.
 
 **ConcreteDecorator**: Aggiunge responsabilità al componente
 
+**CONSIDERAZIONE PERSONALE**
+
+Il mio pattern preferito assieme a Composite
+
