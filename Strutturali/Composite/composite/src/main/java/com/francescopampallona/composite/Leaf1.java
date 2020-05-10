@@ -44,7 +44,7 @@ public class Leaf1 implements Component {
     
     @Override
     public void showComponents(){
-        System.out.println("Primitive objects does not have components!!!");
+        System.out.println("A primitive object does not have components!!!");
     
     }
     
