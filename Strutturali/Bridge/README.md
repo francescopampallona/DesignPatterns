@@ -12,6 +12,12 @@ Detto anche ***Handle/Body o Driver***
 
 **Implementor**: definisce l'interfaccia per le classi che implementano l'astrazione (ConcreteImplementor).
 
+**VANTAGGIO PRINCIPALE**
+
+Con N RefinedAbstraction ed M ConcreteImplementor abbiamo soltanto (N+M) classi grazie all'utilizzo di questo pattern che ***separa l'astrazione dall'implementazione***.
+Senza questa separazione (usando semplicemente l'ereditarietà) sarebbe stato necessario creare (N*M) classi in modo da supportare tutte le combinazioni possibili di astrazione e 
+implementazione.
+
 **COLLABORAZIONI**
 
 ***Abstraction*** trasferisce le richieste ricevute dal Client al suo oggetto ***Implementor***.
