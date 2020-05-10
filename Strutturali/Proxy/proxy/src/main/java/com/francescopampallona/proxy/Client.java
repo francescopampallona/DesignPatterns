@@ -5,6 +5,8 @@
  */
 package com.francescopampallona.proxy;
 
+import java.util.Scanner;
+
 /**
  *
  * @author franc
@@ -12,7 +14,12 @@ package com.francescopampallona.proxy;
 public class Client {
     
     public static void main(String[] args){
-    
+        System.out.println("Enter secret password:");
+        String password = new Scanner(System.in).nextLine();
+        ProtectionProxy pp = new ProtectionProxy(password);
+        pp.Request();
     }
+    
+   
     
 }
