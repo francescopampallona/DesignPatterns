@@ -15,4 +15,5 @@ Comporre oggetti in strutture ad albero per rappresentare gerarchie parte-tutto 
 I client utilizzano l'interfaccia della classe ***Component*** per interagire con gli oggetti della struttura composita che possono essere sia oggetti Leaf, sia oggetti Composite.
 
 **CONSIDERAZIONE PERSONALE**
+
 E' il mio pattern preferito
