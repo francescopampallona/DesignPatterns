@@ -10,16 +10,16 @@ import java.util.HashMap;
  * @author franc
  */
 public class FlyweightFactory {
- private static HashMap<String, Flyweight> instanceList = new HashMap<String, Flyweight>();
+ private static HashMap<String, Flyweight> instanceRegister = new HashMap<String, Flyweight>();
  
  public static Flyweight getFlyweight(String key){
      Flyweight f;
-     if(instanceList.containsKey(key)){
-         f = instanceList.get(key);
+     if(instanceRegister.containsKey(key)){
+         f = instanceRegister.get(key);
      }
      else{
          f = new ConcreteFlyweight(key);
-         instanceList.put(key, f);
+         instanceRegister.put(key, f);
      }
      
      return f;
