@@ -12,7 +12,12 @@ package com.francescopampallona.flyweight;
 public class Client {
     
     public static void main(String[] args){
-    
+        Flyweight f = FlyweightFactory.getFlyweight("p");
+        System.out.println("key: " + f.getKey());
+        System.out.println("HashCode: " + f.hashCode());
+        f.setExternalState("Font: italic; Position: 2, 3; Color: blue;");
+        System.out.println("HashCode: " + f.hashCode());
+        
     }
     
 }
