@@ -14,8 +14,7 @@ Incapsula una richiesta in un oggetto, consentendo di parametrizzare i client co
 
 **COLLABORAZIONI**
 
-```mermaid
-sequenceDiagram
+```sequence {theme='hand'}
 Client-->>aReceiver: new Receiver()
 Client-->>anInvoker: new Invoker()
 Client-->>aCommand: new Command(aReceiver)
@@ -23,3 +22,4 @@ Client->>anInvoker: StoreCommand(key,aCommand)
 Client->>anInvoker: Execute(key)
 anInvoker->>aCommand: Execute() 
 aCommand->>aReceiver: Action()
+```
