@@ -16,8 +16,10 @@ Incapsula una richiesta in un oggetto, consentendo di parametrizzare i client co
 
 ```mermaid
 sequenceDiagram
-aClient-->>aCommand: new Command(aReceiver)
-aClient->>anInvoker: StoreCommand(key,aCommand)
-aClient->>anInvoker: Execute(key)
+Client-->>aReceiver: new Receiver()
+Client-->>anInvoker: new Invoker()
+Client-->>aCommand: new Command(aReceiver)
+Client->>anInvoker: StoreCommand(key,aCommand)
+Client->>anInvoker: Execute(key)
 anInvoker->>aCommand: Execute() 
 aCommand->>aReceiver: Action()
