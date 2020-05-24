@@ -14,7 +14,7 @@ Incapsula una richiesta in un oggetto, consentendo di parametrizzare i client co
 
 **COLLABORAZIONI**
 
-```sequence {theme='hand'}
+```
 Client-->>aReceiver: new Receiver()
 Client-->>anInvoker: new Invoker()
 Client-->>aCommand: new Command(aReceiver)
@@ -23,3 +23,5 @@ Client->>anInvoker: Execute(key)
 anInvoker->>aCommand: Execute() 
 aCommand->>aReceiver: Action()
 ```
+
+<img src="sequence_diagram.svg">
