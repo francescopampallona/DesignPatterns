@@ -12,6 +12,15 @@ package com.francescopampallona.template_method;
 public class Client {
     
     public static void main(String[] args){
+        AbstractClass c1 = new ConcreteClass1();
+        AbstractClass c2 = new ConcreteClass2();
+        c1.TemplateMethod(true);
+        System.out.println("_____________________________________");
+        c1.TemplateMethod(false);
+        System.out.println("_____________________________________");
+        c2.TemplateMethod(false);
+        
+        
         
     }
 }
