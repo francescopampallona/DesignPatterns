@@ -13,8 +13,8 @@ public class Client {
     public static void main(String[] args){
         AbstractFactory f = AbstractFactory.getFactory(1);
         if(f!=null){
-            f.CreateProductA();
-            f.CreateProductB();
+            AbstractProductA productA= f.CreateProductA();
+            AbstractProductB productB = f.CreateProductB();
         }
         else{
             System.out.println("Error!!!");
