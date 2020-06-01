@@ -38,7 +38,7 @@ public class NonTerminalExpression extends AbstractExpression {
                         else res = res - (Integer) iterValues.next();
                         break;
                     default:
-                        System.out.println("Error: operand not recognized!!!");
+                        System.out.println("Error: operator not recognized!!!");
                         return;
                 }
             }
