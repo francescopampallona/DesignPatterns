@@ -11,4 +11,5 @@ Invece di distribuire la ***responsabilità*** della creazione tra i vari oggett
 <img src="builder_structure.jpg">
 
 **COLLABORAZIONI**
+
 <img src="builder_collaborations.jpg">
