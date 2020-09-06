@@ -6,3 +6,9 @@ Rendere flessibili eventuali modifiche della struttura di oggetti che formano un
 
 **SOLUZIONE**
 Invece di distribuire la ***responsabilità*** della creazione tra i vari oggetti è più conveniente localizzare in un unico punto la logica di creazione dell'intera struttura
+
+**STRUTTURA**
+<img src="builder_classes_diagram.jpg">
+
+**COLLABORAZIONI**
+<img src="builder_collaborations.jpg">
